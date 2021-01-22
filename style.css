@@ -10,31 +10,28 @@ body{
     /*---------------*/
     /*---------------*/
 header{
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px;
 }
-.logo{
+.logo img{
     width: 100px;   
 }
 nav ul{
-    margin: 0;
-    padding: 0;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
-nav ul li{
-    display: inline-block;
-    padding: 20px 15px;
-    text-decoration: none;
-}
+
 nav a{
     text-decoration: none;
     color: black;
 }
-nav a:active{
+nav a:hover{
     color: #0065FC;
-    text-decoration: overline #0065FC;
+    border-top: 0;
 
 }
 .inscription{
@@ -53,7 +50,7 @@ footer{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 10px 300px 10px 10px;
+    margin: 10px 300px 10px 30px;
 }
 footer ul{
     margin-right: 200px;
@@ -64,6 +61,15 @@ footer a{
     text-decoration: none;
     color: black;
     display: inline-block;
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
 
+}
+    /*---------------*/
+    /*---------------*/
+    /*---conteneur---*/
+    /*---------------*/
+    /*---------------*/
+
+.conteneur{
+    margin: 20px;
 }
