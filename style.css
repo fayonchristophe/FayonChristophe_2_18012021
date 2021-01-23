@@ -1,8 +1,11 @@
 body{
-    font-family: Raleway, arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
+}
+h1, h2{
+    font-weight: bold;
 }
     /*---------------*/
     /*---------------*/
@@ -28,12 +31,15 @@ nav ul{
     list-style: none;
     display: flex;
 }
-nav li{
-     margin-right: 30px;
-}
+
 nav a{
+    height: 100px;
+    width: 150px;
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav a:hover{
     color: #0065FC;
@@ -88,13 +94,11 @@ footer a{
 .icone{
     display: flex;
     align-items: flex-start;
-    height: 40px;
-   
 }
 .icone i{
     background-color: #f2f2f2;
-    width: 40px;
-    height: 100%;
+    width: 45px;
+    height: 48px;
     border: 1px solid #f2f2f2;
     display: flex;
     align-items: center;
@@ -102,15 +106,64 @@ footer a{
     border-radius: 15px 0 0 15px;
 }
 form{
-   height: 40px;
    display: flex;
-   color: #f2f2f2;
+}
+input[type=search] {
+    border: 1px solid #f2f2f2;
+    height: 50px;
+    width: 220px;
+}
+#ville::placeholder{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
 }
 button{
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
-    width: 100px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 1.2em;
      color: white;
-    
+}
+    /*---------------*/
+    /*---------------*/
+    /*----Filtres----*/
+    /*---------------*/
+    /*---------------*/
+
+.filtre{
+    display: flex;
+    align-items: center;
+
+}
+.filtre ul{
+    list-style: none;
+    display: flex;
+}
+.filtre li{
+    margin: 20px;
+    height: 50px;
+    width: auto;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.filtre li i{
+    border: 1px solid #DEEBFF;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    font-size: 20px;
+}
+.filtre li a{
+    text-decoration: none;
 }
