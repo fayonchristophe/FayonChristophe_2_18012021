@@ -5,7 +5,7 @@ body{
     padding: 0;
 }
 h1, h2{
-    font-weight: bold;
+    font-weight:bold;
 }
     /*---------------*/
     /*---------------*/
@@ -90,7 +90,14 @@ footer a{
     /*----search-----*/
     /*---------------*/
     /*---------------*/
-    
+
+.search h1{
+    margin-bottom: 0;
+}
+.search p{
+    margin-top: 10px;
+}
+
 .icone{
     display: flex;
     align-items: flex-start;
@@ -143,14 +150,16 @@ button{
     display: flex;
 }
 .filtre li{
-    margin: 20px;
-    height: 50px;
+    margin: 15px;
+    height: 48px;
     width: auto;
-    border: 1px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px 25px 25px 25px;
+    border-left-style: none;
+
 }
 .filtre li i{
     border: 1px solid #DEEBFF;
@@ -166,4 +175,30 @@ button{
 }
 .filtre li a{
     text-decoration: none;
+    margin-right: 20px;
+    margin-left: 15px;
+    color: black;
+}
+.filtre li:hover{
+    background: #0065FC;
+}
+.filtre li a:hover{
+    color: white
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info p{
+    margin: 10px;
+}
+.info i{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #0065FC;
 }
