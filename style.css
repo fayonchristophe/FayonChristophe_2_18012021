@@ -3,10 +3,15 @@ body{
     font-size: 14px;
     margin: 0;
     padding: 0;
-}
-h1, h2{
-    font-weight:bold;
-}
+ }
+ #bloc_page{
+     width: 1440px;
+     margin-top: 0;
+     margin-bottom: 0;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
     /*---------------*/
     /*---------------*/
     /*----header-----*/
@@ -14,7 +19,7 @@ h1, h2{
     /*---------------*/
 header{
     height: 100px;
-    margin: 20px;
+    margin: 0 50px 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,12 +61,13 @@ nav a:hover{
 
 footer{
     background-color: #f2f2f2;
+    height: 220;
 }
 .pied{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 10px 300px 10px 30px;
+    margin: 10px 350px 10px 50px;
 }
 footer ul{
     margin-right: 200px;
@@ -82,7 +88,7 @@ footer a{
     /*---------------*/
 
 .conteneur{
-    margin: 20px;
+    margin: 50px;
 }
 
     /*---------------*/
@@ -91,11 +97,10 @@ footer a{
     /*---------------*/
     /*---------------*/
 
-.search h1{
-    margin-bottom: 0;
-}
+
 .search p{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .icone{
@@ -143,7 +148,6 @@ button{
 .filtre{
     display: flex;
     align-items: center;
-
 }
 .filtre ul{
     list-style: none;
@@ -157,9 +161,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 50px;
     border-left-style: none;
-
 }
 .filtre li i{
     border: 1px solid #DEEBFF;
@@ -168,7 +171,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 50px;
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: 20px;
@@ -176,15 +179,12 @@ button{
 .filtre li a{
     text-decoration: none;
     margin-right: 20px;
-    margin-left: 15px;
     color: black;
 }
 .filtre li:hover{
     background: #0065FC;
 }
-.filtre li a:hover{
-    color: white
-}
+
 .info{
     display: flex;
     align-items: center;
@@ -201,4 +201,77 @@ button{
     justify-content: center;
     border-radius: 20px;
     color: #0065FC;
+}
+
+    /*---------------*/
+    /*---------------*/
+    /*--hébergement--*/
+    /*---------------*/
+    /*---------------*/
+
+.propositions{
+    width: 900px;
+    height: 630px;
+    margin-top: 40px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+.contenu{
+    margin: 45px 10px 45px 40px;
+}
+.contenu h1{
+    margin-bottom: 0;
+}
+.figure_1{
+    margin: 0;
+    display: flex;
+    flex-flow: wrap row;
+}
+.image_1{
+    margin: 20px 30px 15px 0;
+    width: 240px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 20px;
+}
+.image_1 a{
+    text-decoration: none;
+    color: black;
+}
+.image_1 img{
+    object-fit: cover;
+    width: 240px;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+.image_1 figcaption{
+    margin-left: 12px;
+}
+.image_1 figcaption h3, p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.image_1 figcaption .fas{
+   color: #0065FC;
+}
+.image_1 figcaption .grey{
+    color: #f2f2f2;
+}
+span{
+    font-weight: bold;
+}
+
+    /*---------------*/
+    /*---------------*/
+    /*---activités---*/
+    /*---------------*/
+    /*---------------*/
+
+.lieux{
+    height: 500px;
+    margin-top: 40px;
+    border: 1px solid;
 }
