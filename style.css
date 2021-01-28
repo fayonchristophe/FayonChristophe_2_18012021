@@ -209,16 +209,24 @@ button{
     /*---------------*/
     /*---------------*/
 
-.propositions{
-    width: 900px;
+.principale{
+    width: 100%;
     height: 630px;
+    display: flex;
+    flex-direction: row;
     margin-top: 40px;
+}
+
+.propositions{
+    width: 880px;
+    height: 100%;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-right: 20px;
 }
 .contenu{
-    margin: 45px 10px 45px 40px;
+    margin: 45px 10px 45px 35px;
 }
 .contenu h1{
     margin-bottom: 0;
@@ -229,7 +237,7 @@ button{
     flex-flow: wrap row;
 }
 .image_1{
-    margin: 20px 30px 15px 0;
+    margin: 20px 25px 15px 0;
     width: 240px;
     height: 200px;
     border: 5px solid white;
@@ -263,6 +271,64 @@ button{
 span{
     font-weight: bold;
 }
+.populaire{
+    width: 420px;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+ 
+}
+.contenu_2{
+    margin: 45px 40px 45px 40px;
+}
+.title_populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.title_populaire h1{
+    margin: 0;
+}
+.figure_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.image_2{
+    width: 330px;
+    height: 140px;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 20px;
+  }
+.image_2 a{
+    text-decoration: none;
+    color: black;
+}
+.image_2 img{
+    object-fit: cover;
+    width: 120px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.image_2 figcaption{
+    display: inline-flex;
+    
+}
+.image_2 figcaption h3, p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.image_2 figcaption .fas{
+   color: #0065FC;
+}
+.image_2 figcaption .grey{
+    color: #f2f2f2;
+}
+
 
     /*---------------*/
     /*---------------*/
@@ -272,6 +338,123 @@ span{
 
 .lieux{
     height: 500px;
-    margin-top: 40px;
-    border: 1px solid;
+    width: 100%;
+    margin-top: 65px;
+}
+.lieux h1{
+    margin-bottom: 0;
+}
+.figure_3{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.colone{
+    display: flex;
+    flex-direction: column;
+}
+.image_3 a{
+    text-decoration: none;
+    color: black;
+}
+.image_3{
+    margin: 20px 45px 15px 0;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px #f2f2f2;
+}
+.image_3 img{
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 0;
+}
+.image_3 figcaption{
+    margin-left: 12px;
+}
+.image_3 figcaption h3{
+    vertical-align: middle;
+}
+
+    /*---image 3---*/
+
+.image_4{
+    margin: 20px 45px 25px 0;
+    width: 300px;
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px #f2f2f2;
+}
+.image_4 a{
+    text-decoration: none;
+    color: black;
+}
+.image_4 img{
+    object-fit: cover;
+    width: 300px;
+    height: 190px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 0;
+}
+.image_4 figcaption{
+    margin-left: 12px;
+}
+.image_4 figcaption h3{
+    vertical-align: middle;
+}
+
+    /*---image 4---*/
+
+.image_5{
+    margin: 20px 45px 15px 0;
+    width: 300px;
+    height: 165px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px #f2f2f2;
+}
+.image_5 a{
+    text-decoration: none;
+    color: black;
+}
+.image_5 img{
+    object-fit: cover;
+    width: 300px;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 0;
+}
+.image_5 figcaption{
+    margin-left: 12px;
+}
+.image_5 figcaption h3{
+    vertical-align: middle;
+}
+
+    /*---image 5---*/
+
+.image_6{
+    margin: 20px 45px 20px 0;
+    width: 300px;
+    height: 205px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px #f2f2f2;
+}
+.image_6 a{
+    text-decoration: none;
+    color: black;
+}
+.image_6 img{
+    object-fit: cover;
+    width: 300px;
+    height: 155px;
+    border-radius: 15px 15px 0 0;
+     margin-left: 0;
+}
+.image_6 figcaption{
+    margin-left: 12px;
+}
+.image_6 figcaption h3{
+    vertical-align: middle;
 }
