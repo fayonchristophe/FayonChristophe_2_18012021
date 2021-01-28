@@ -61,7 +61,10 @@ nav a:hover{
 
 footer{
     background-color: #f2f2f2;
+    width: 1440px;
     height: 220;
+    margin-left: auto;
+    margin-right: auto;
 }
 .pied{
     display: flex;
@@ -244,10 +247,6 @@ button{
     background-color: white;
     border-radius: 20px;
 }
-.image_1 a{
-    text-decoration: none;
-    color: black;
-}
 .image_1 img{
     object-fit: cover;
     width: 240px;
@@ -271,6 +270,18 @@ button{
 span{
     font-weight: bold;
 }
+.contenu a{
+    text-decoration: none;
+    color: black;
+}
+
+    /*---------------*/
+    /*---------------*/
+    /*---populaire---*/
+    /*---------------*/
+    /*---------------*/
+
+
 .populaire{
     width: 420px;
     height: 100%;
@@ -340,6 +351,8 @@ span{
     height: 500px;
     width: 100%;
     margin-top: 65px;
+    margin-left: 50px;
+    margin-bottom: 60px;
 }
 .lieux h1{
     margin-bottom: 0;
@@ -353,7 +366,7 @@ span{
     display: flex;
     flex-direction: column;
 }
-.image_3 a{
+.lien a{
     text-decoration: none;
     color: black;
 }
