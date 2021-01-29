@@ -41,12 +41,25 @@
                 <!-- outil filtre -->
                 <div class="filtre">
                     <h2>Filtres</h2>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-money-bill-wave"></i></a><h3>Économique</h3></li>
-                        <li><a href="#"><i class="fas fa-child"></i></a><h3>Familial</h3></li>
-                        <li><a href="#"><i class="fas fa-heart"></i></a><h3>Romantique</h3></li>
-                        <li><a href="#"><i class="fas fa-dog"></i></a><h3>Animaux autorisés</h3></li>
-                    </ul>
+                    <div class="lien_filtres">
+                        <a href="#">
+                            <i class="fas fa-money-bill-wave"></i><h3>Économique</h3>
+                        </a>
+                    </div>
+                    <div class="lien_filtres">
+                        <a href="#">
+                            <i class="fas fa-child"></i><h3>Familial</h3>
+                        </a>
+                    </div>
+                    <div class="lien_filtres">
+                        <a href="#">
+                            <i class="fas fa-heart"></i><h3>Romantique</h3>
+                        </a>
+                    </div><div class="lien_filtres">
+                        <a href="#">
+                            <i class="fas fa-dog"></i><h3>Animaux autorisés</h3>
+                        </a>
+                    </div>
                 </div>
                 <div class="info">
                     <i class="fas fa-info"></i>
@@ -62,7 +75,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1"> 
-                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge">
+                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière">
                                     <figcaption> 
                                         <h3>Auberge la cannebière</h3>
                                         <p>Nuit à partir de <span>25€</span></p>
@@ -78,7 +91,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1">
-                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="port">
+                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                                     <figcaption> 
                                         <h3>Hôtel du port</h3>
                                         <p>Nuit à partir de 52<span>€</span></p>
@@ -94,7 +107,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1"> 
-                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="mouettes">
+                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
                                     <figcaption> 
                                         <h3>Hôtel Les mouettes</h3>
                                         <p>Nuit à partir de 76<span>€</span></p>
@@ -110,7 +123,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1"> 
-                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer">
+                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                                     <figcaption> 
                                         <h3>Hôtel de la mer</h3>
                                         <p>Nuit à partir de 46<span>€</span></p>
@@ -126,7 +139,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1"> 
-                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier">
+                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
                                     <figcaption> 
                                         <h3>Auberge le panier</h3>
                                         <p>Nuit à partir de <span>23€</span></p>
@@ -142,7 +155,7 @@
                             <div class="lien">
                                 <a href="#">
                                 <figure class="image_1"> 
-                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez Amina">
                                     <figcaption> 
                                         <h3>hôtel chez Amina</h3>
                                         <p>Nuit à partir de 96<span>€</span></p>
@@ -172,11 +185,13 @@
                                     <figcaption> 
                                         <h3>Hôtel Le soleil du matin</h3>
                                         <p>Nuit à partir de 128<span>€</span></p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star grey"></i>
+                                        <div class="note">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
                                     </figcaption>
                                 </figure>
                                 </a>
@@ -293,24 +308,24 @@
             <div class="pied">
                 <div class="apropos">
                     <ul>
-                        <li><h2>A propos</h2></li>
+                        <li><h3>A propos</h3></li>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales de vente</a></li>
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div class="Noshebergements">
-                    <h2>Nos hébergements</h2>
                     <ul>
+                        <li><h3>Nos hébergements</h3></li>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Soumettre votre hôtel</a></li>
                     </ul>
                 </div>
                 <div class="assistance">
-                    <h2>assistance</h2>
                     <ul>
+                        <li><h3>Assistance</h3></li>
                         <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contecter</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>

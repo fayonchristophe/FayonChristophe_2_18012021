@@ -68,21 +68,25 @@ footer{
 }
 .pied{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    margin: 10px 350px 10px 50px;
+    margin-right: 350px;
 }
-footer ul{
-    margin-right: 200px;
-    padding: 0;
+.pied ul{
+    margin-top: 40px;
+    margin-bottom: 40px;
     list-style: none;
 }
-footer a{
+.pied a{
     text-decoration: none;
     color: black;
-    display: inline-block;
     margin: 5px 0 5px 0;
-
+}
+.pied li{
+    margin-top: 18px;
+}
+.pied li h3{
+    margin-bottom: 0;
 }
     /*---------------*/
     /*---------------*/
@@ -149,25 +153,24 @@ button{
     /*---------------*/
 
 .filtre{
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.filtre ul{
-    list-style: none;
-    display: flex;
-}
-.filtre li{
+
+.lien_filtres{
     margin: 15px;
     height: 48px;
     width: auto;
-    border: 3px solid #f2f2f2;
+    border: 4px solid #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     border-left-style: none;
 }
-.filtre li i{
+.lien_filtres a i{
     border: 1px solid #DEEBFF;
     height: 50px;
     width: 50px;
@@ -178,16 +181,28 @@ button{
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: 20px;
+    transition: all 1s ease-in-out;
 }
-.filtre li a{
+.lien_filtres a{
     text-decoration: none;
-    margin-right: 20px;
     color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
 }
-.filtre li:hover{
+.lien_filtres h3{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.lien_filtres a:hover{
     background: #0065FC;
+    border-radius: 50px;
 }
-
+.lien_filtres a:hover i{
+    transform: rotate(360deg);
+   
+}
 .info{
     display: flex;
     align-items: center;
@@ -217,7 +232,7 @@ button{
     height: 630px;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .propositions{
@@ -226,7 +241,7 @@ button{
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 .contenu{
     margin: 45px 10px 45px 35px;
@@ -288,7 +303,6 @@ span{
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
- 
 }
 .contenu_2{
     margin: 45px 40px 45px 40px;
@@ -299,7 +313,7 @@ span{
     align-items: center;  
 }
 .title_populaire h1{
-    margin: 0;
+    margin: 0 0 5px 0;
 }
 .figure_2{
     display: flex;
@@ -312,6 +326,8 @@ span{
     border: 5px solid white;
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
   }
 .image_2 a{
     text-decoration: none;
@@ -319,19 +335,23 @@ span{
 }
 .image_2 img{
     object-fit: cover;
-    width: 120px;
-    height: 100%;
+    width: 125px;
+    height: 140px;
     border-radius: 15px 0 0 15px;
-    margin-bottom: 0;
     margin-right: 0;
 }
 .image_2 figcaption{
-    display: inline-flex;
-    
+    margin: 10px 40px 15px 20px;    
 }
-.image_2 figcaption h3, p{
+.image_2 figcaption h3{
     margin-top: 6px;
     margin-bottom: 6px;
+}
+.image_2 figcaption p{
+    margin-bottom: 40px;
+}
+.note{
+    margin-bottom: 0;
 }
 .image_2 figcaption .fas{
    color: #0065FC;
@@ -351,7 +371,6 @@ span{
     height: 500px;
     width: 100%;
     margin-top: 65px;
-    margin-left: 50px;
     margin-bottom: 60px;
 }
 .lieux h1{
