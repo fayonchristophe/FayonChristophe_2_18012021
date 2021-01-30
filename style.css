@@ -61,8 +61,8 @@ nav a:hover{
 
 footer{
     background-color: #f2f2f2;
-    width: 1440px;
-    height: 220;
+    width: 100%;
+    height: 220px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -144,7 +144,8 @@ button{
     width: 130px;
     font-weight: bold;
     font-size: 1.2em;
-     color: white;
+    color: white;
+    cursor: pointer;
 }
     /*---------------*/
     /*---------------*/
@@ -236,7 +237,7 @@ button{
 }
 
 .propositions{
-    width: 880px;
+    width: 68%;
     height: 100%;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
@@ -298,7 +299,7 @@ span{
 
 
 .populaire{
-    width: 420px;
+    width: 32%;
     height: 100%;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
