@@ -5,7 +5,8 @@ body{
     padding: 0;
  }
  #bloc_page{
-     width: 1440px;
+     max-width: 1440px;
+     width: 100%;
      margin: auto;
  }
     /*---------------*/
@@ -82,7 +83,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 350px;
+    margin-right: 25%;
 }
 .pied ul{
     margin-top: 40px;
@@ -181,9 +182,9 @@ button{
 }
 
 .lien_filtres{
-    margin: 15px;
-    height: 48px;
     width: auto;
+    height: 48px;
+    margin: 15px;
     border: 2px solid #f2f2f2;
     display: flex;
     align-items: center;
@@ -205,16 +206,19 @@ button{
     transition: all 1s ease-in-out;
 }
 .lien_filtres a{
+    width: auto;
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
+    white-space: nowrap;
   
 }
 .lien_filtres h3{
     margin-left: 10px;
     margin-right: 20px;
+
 }
 .lien_filtres a:hover{
     background: #0065FC;
@@ -250,7 +254,7 @@ button{
 
 .principale{
     width: 100%;
-    height: 630px;
+    height: auto;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -265,12 +269,13 @@ button{
     margin-right: 40px;
 }
 .contenu{
-    margin: 45px 0 45px 35px;
+    margin: 45px 0 20px 35px;
 }
 .contenu h1{
     margin-bottom: 0;
 }
 .figure_1{
+    height: 100%;
     margin: 0;
     display: flex;
     flex-flow: wrap row;
@@ -326,7 +331,7 @@ span{
     border-radius: 20px;
 }
 .contenu_2{
-    margin: 45px 40px 45px 40px;
+    margin: 45px 30px 20px 30px;
 }
 .title_populaire{
     display: flex;
@@ -336,19 +341,28 @@ span{
 .title_populaire h1{
     margin: 0 0 5px 0;
 }
+.title_populaire i{
+    font-size: 1.5em;
+}
 .figure_2{
     display: flex;
     flex-direction: column;
     align-items: center;
  }
+ .lien{
+     width: auto;
+ }
 .image_2{
-    width: 330px;
+    width: auto;
     height: 140px;
+    margin-left: 0;
+    margin-right: 0;
     border: 5px solid white;
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 .image_2 a{
     text-decoration: none;
@@ -356,32 +370,36 @@ span{
 }
 .image_2 img{
     object-fit: cover;
-    width: 125px;
-    height: 140px;
+    width: 40%;
+    height: 100%;
     border-radius: 15px 0 0 15px;
     margin-right: 0;
 }
-.image_2 figcaption{
-    margin: 10px 40px 15px 20px;    
+.image_2 figcaption {
+    margin: 15px;
+    height: 90%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.image_2 figcaption p{
+    margin-bottom: 0;
+    margin-top: 0;
+    flex-grow: 2;
 }
 .image_2 figcaption h3{
     margin-top: 6px;
     margin-bottom: 6px;
 }
-.image_2 figcaption p{
-    margin-bottom: 40px;
-}
 .note{
     margin-bottom: 0;
+    font-size: 0.8em;
 }
 .image_2 figcaption .fas{
    color: #0065FC;
 }
 .image_2 figcaption .grey{
     color: #f2f2f2;
-}
-.note{
-    font-size: 0.8em;
 }
 
     /*---------------*/
@@ -392,7 +410,7 @@ span{
 
 .lieux{
     width: 100%;
-    height: 500px;  
+    height: auto;  
     margin-top: 65px;
     margin-bottom: 60px;
 }
@@ -402,7 +420,7 @@ span{
 .figure_3{
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-flow: row ;
 }
 .colone{
     display: flex;
@@ -514,9 +532,13 @@ span{
     vertical-align: middle;
 }
 
-    /*---Partie reponsive---*/
+    /*---Reponsive smartphone---*/
+    
 
-@media screen and (max-width: 480px){
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    html{
+        font-size: 12px;
+    }
     #bloc_page{
         width: auto;
     }
@@ -640,9 +662,6 @@ span{
     .title_populaire{
         width: 100%;
     }
-    .title_populaire i{
-        font-size: 1.5em;
-    }
     .image_1, .image_2{
         width: auto;
         margin: 10px 0 0 0;
@@ -650,23 +669,6 @@ span{
     .lien{
         width: 100%;
     }
-    .image_2 img{
-        width: 40%;
-        height: 100%;
-    }
-    .image_2 figcaption {
-        margin-right: 15px;
-        height: auto;
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-between;
-    }
-    .image_2 figcaption p{
-        margin-bottom: initial;
-        margin-top: 0;
-        flex-grow: 2;
-    }
-
     .contenu{
         margin: 40px 20px 30px 20px;
     }
@@ -732,4 +734,8 @@ span{
 
 
 }
+
+    /*---Responsive tablette--*/
+
+
 
