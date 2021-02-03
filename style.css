@@ -81,7 +81,7 @@ footer{
 }
 .pied{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-right: 25%;
 }
@@ -192,7 +192,7 @@ button{
     border-radius: 50px;
     border-left-style: none;
 }
-.lien_filtres a i{
+.filtre_categorie a i{
     border: 1px solid #DEEBFF;
     height: 50px;
     width: 50px;
@@ -256,26 +256,26 @@ button{
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
 .propositions{
-    width: 68%;
+    width: 64%;
     height: 100%;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin-right: 40px;
 }
 .contenu{
-    margin: 45px 0 20px 35px;
+    margin: 45px 0px 30px 25px;
 }
 .contenu h1{
     margin-bottom: 0;
 }
 .figure_1{
-    height: 100%;
+    height: auto;
     margin: 0;
     display: flex;
     flex-flow: wrap row;
@@ -418,9 +418,11 @@ span{
     margin-bottom: 0;
 }
 .figure_3{
+    width: 100%;
+    height: auto;
     margin: 0;
     display: flex;
-    flex-flow: row ;
+    flex-flow: row;
 }
 .colone{
     display: flex;
@@ -535,20 +537,132 @@ span{
     /*---Reponsive smartphone---*/
     
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
+
+
+    /*---Responsive tablette--*/
+
+@media screen and (max-width: 1439px){
+
+    /*--Proposition--*/
+
+    .principale{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: initial;
+    }
+    .contenu_2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .populaire{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+    .figure_2{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .image_2{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .propositions{
+        width: 100%;
+        order: 2;
+    }
+    .contenu{
+        margin-right: initial;
+    }
+    .figure_1{
+        width: 100%;
+        align-content: space-between;
+        justify-content: center;
+
+    }
+    .image_1{
+        width: 375px;
+    }
+    .image_1 img{
+        width: 100%;
+        height: 60%;
+    }
+
+    /*--activités--*/
+
+    .figure_3{
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    .image_3, .image_4, .image_5, .image_6{
+        width: 400px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .image_3 img, .image_4 img, .image_5 img, .image_6 img{
+        width: 100%;
+        height: 67%;
+    }
+
+@media screen and (max-width: 1023px){
+
+    /*--Filtre catégorie--*/
+
+    .filtre{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtre_categorie{
+        margin-top: -10px;
+        flex-flow: row wrap;
+    }
+    .lien_filtres{
+        margin: 10px 10px 10px 0;
+    }
+
+
+    .figure_2{
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+
+
+        
+
+
+
+
+     
+
+
+    
+    }
+
+@media screen and (max-width: 479px){
+
     html{
         font-size: 12px;
     }
-    #bloc_page{
+       #bloc_page{
         width: auto;
     }
     .conteneur{
         width: 100%;
         margin: 0;
     }
-
+    
     /*--header--*/
-
+    
     header{
         width: auto;
         height: 130px;
@@ -581,8 +695,8 @@ span{
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
-
-
+    
+    
     /*--filtre--*/
     .search{
         width: auto;
@@ -605,7 +719,7 @@ span{
         align-items: center;
         justify-content: center;
     }
-    button span{
+    .text{
         display: none;
     }
     .loupe{
@@ -628,10 +742,10 @@ span{
     .lien_filtres{
         margin: 10px 10px 10px 0;
     }
-
-
+    
+    
     /*--première catégorie--*/
-
+    
     .principale{
         width: 100%;
         height: auto;
@@ -652,12 +766,13 @@ span{
         border: initial;
         background-color: initial;
     }
+    
     .figure_1{
         flex-direction: column;
         align-items: center;
     }
     .contenu_2{
-        margin: 40px 20px 40px 20px;
+           margin: 40px 20px 40px 20px;
     }
     .title_populaire{
         width: 100%;
@@ -679,20 +794,16 @@ span{
         width: 100%;
         height: 60%;
     }
-    .contenu a{
-        margin-top: 20px;
-        align-self: flex-start;
-    }
-
+    
     /*--Activité--*/
-
+    
     .lieux{
         width: auto;
         height: auto;
         margin: 0 20px 60px 20px;
     }
     .lieux h1{
-        margin-bottom: -10px;
+        margin-bottom: 10px;
     }
     .figure_3{
         margin: 0;
@@ -708,34 +819,29 @@ span{
         width: 100%;
         height: 67%;
     }
-    .colone{
-        width: 100%;
-        height: auto;
-        align-items: center;
-        margin: 0;
-    }
-    .image_6{
-        width: 100%;
-        height: 200px;
-        margin: 25px 0 0 0;
-    }
-
-    /*--footer--*/
+        .colone{
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin: 0;
+        }
+        .image_6{
+            width: 100%;
+            height: 200px;
+            margin: 25px 0 0 0;
+        }
     
-    footer{
-        height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        /*--footer--*/
+        
+        footer{
+            height: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .pied{
+            display: block;
+            margin-right: 0;
+        }
+    
+    
     }
-    .pied{
-        display: block;
-        margin-right: 0;
-    }
-
-
-}
-
-    /*---Responsive tablette--*/
-
-
-
