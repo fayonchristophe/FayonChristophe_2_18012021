@@ -61,11 +61,13 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: border 0.3s ease-in-out;
+    border-top: 2px solid transparent;
 }
 nav a:hover{
     color: #0065FC;
 }
-.registration a, nav a{
+.registration a{
     transition: border 0.4s ease-in-out;
     border-bottom: 2px solid transparent;
 }
