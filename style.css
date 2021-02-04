@@ -52,6 +52,7 @@ nav{
     text-decoration: none;
     color: #0065FC;
 }
+
 nav a{
     height: 100px;
     width: 150px;
@@ -63,7 +64,13 @@ nav a{
 }
 nav a:hover{
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+}
+.registration a, nav a{
+    transition: border 0.4s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.registration a:hover, nav a:hover{
+    border-color: #0065FC;
 }
 
     /*---------------*/
@@ -628,39 +635,37 @@ span{
         margin: 10px 10px 10px 0;
     }
 
-
     .figure_2{
         flex-direction: column;
-        align-content: center;
+        justify-items: center;
     }
-
-
-
-
-        
-
-
-
-
-     
-
-
-    
+    .image_2{
+        width: 370px;
     }
-
-@media screen and (max-width: 479px){
-
-    html{
-        font-size: 12px;
+    .image_2 img{
+        object-fit: cover;
+        width: 40%;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        margin-right: 0;
     }
-       #bloc_page{
-        width: auto;
+}
+@media screen and (max-width: 1000px){
+
+    .figure_3{
+        flex-direction: column;
+        align-items: center;
     }
-    .conteneur{
-        width: 100%;
-        margin: 0;
+    .image_3, .image_4, .image_5, .image_6{
+        height: 200px;
+        margin: 25px 0 0 0;
     }
     
+}
+
+@media screen and (max-width: 750px){
+
+
     /*--header--*/
     
     header{
@@ -672,7 +677,7 @@ span{
     .logo{
         margin-left: 20px;
     }
-
+    
     .registration{
         order: initial;
         margin-right: 20px;
@@ -682,7 +687,7 @@ span{
     }
     nav {
         width: 100%;
-        
+            
     }
     nav a{
         width: 50%;
@@ -695,8 +700,34 @@ span{
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
+
+    /*--footer--*/
+        
+    footer{
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .pied{
+        display: block;
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 500px){
+
+    html{
+        font-size: 12px;
+    }
+       #bloc_page{
+        width: auto;
+    }
+    .conteneur{
+        width: 100%;
+        margin: 0;
+    }
     
-    
+
     /*--filtre--*/
     .search{
         width: auto;
@@ -729,20 +760,8 @@ span{
         border: initial;
         background-color: initial;
         border-radius: initial;
-    }
-    .filtre{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .filtre_categorie{
-        margin-top: -10px;
-        flex-flow: row wrap;
-    }
-    .lien_filtres{
-        margin: 10px 10px 10px 0;
-    }
     
+    }
     
     /*--première catégorie--*/
     
@@ -819,29 +838,17 @@ span{
         width: 100%;
         height: 67%;
     }
-        .colone{
-            width: 100%;
-            height: auto;
-            align-items: center;
-            margin: 0;
-        }
-        .image_6{
-            width: 100%;
-            height: 200px;
-            margin: 25px 0 0 0;
-        }
-    
-        /*--footer--*/
-        
-        footer{
-            height: auto;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        .pied{
-            display: block;
-            margin-right: 0;
-        }
-    
-    
+    .colone{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: 0;
     }
+    .image_6{
+        width: 100%;
+        height: 200px;
+        margin: 25px 0 0 0;
+    }
+    
+
+}
